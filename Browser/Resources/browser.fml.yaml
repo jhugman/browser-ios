@@ -1,0 +1,15 @@
+---
+about:
+  description: The Browser config for the app.
+  ios:
+    class: AppConfig
+    module: Browser
+channels:
+  - release
+  - debug
+imports:
+  - path: ../UI/ui.fml.yaml
+    channel: release
+features: {}
+objects: {}
+enums: {}

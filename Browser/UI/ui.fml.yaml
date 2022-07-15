@@ -1,0 +1,12 @@
+---
+about:
+  description: The UI config for the app.
+  ios:
+    class: UIConfig
+    module: Browser
+channels:
+  - release
+  - debug
+features: {}
+objects: {}
+enums: {}

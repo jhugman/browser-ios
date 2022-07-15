@@ -88,3 +88,11 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+## Nimbus Generated code.
+bin/nimbus-fml-configuration.local.sh
+*/Generated/
+build/
+
+## Python, for Glean
+.venv/
