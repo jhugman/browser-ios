@@ -1,0 +1,13 @@
+objects:
+  Trigger:
+    description: A JEXL powered trigger to determine whether or not to show a given item
+    fields:
+      only-if:
+        description: A list of all conditions that have to be true.
+        type: List<String>
+        default: ["ALWAYS"]
+      exluding:
+        description: A list of all conditions that must be false.
+        type: List<String>
+        default: []
+

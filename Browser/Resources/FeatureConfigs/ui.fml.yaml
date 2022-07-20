@@ -5,8 +5,7 @@ about:
     class: UIConfig
     module: Browser
 channels:
-  - release
-  - debug
-features: {}
-objects: {}
-enums: {}
+  - none
+includes:
+    - ./app-menu.yaml
+    - ./onboarding.yaml

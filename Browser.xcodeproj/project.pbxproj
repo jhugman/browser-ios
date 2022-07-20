@@ -15,12 +15,17 @@
 		398DB97A28736BA200F921AD /* BrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398DB97928736BA200F921AD /* BrowserUITests.swift */; };
 		398DB97C28736BA200F921AD /* BrowserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398DB97B28736BA200F921AD /* BrowserUITestsLaunchTests.swift */; };
 		398DB98F28736E6B00F921AD /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398DB98E28736E6B00F921AD /* CancelBag.swift */; };
-		398DB99228736F5000F921AD /* Glean in Frameworks */ = {isa = PBXBuildFile; productRef = 398DB99128736F5000F921AD /* Glean */; };
 		398DB99528736F9C00F921AD /* MozillaAppServices in Frameworks */ = {isa = PBXBuildFile; productRef = 398DB99428736F9C00F921AD /* MozillaAppServices */; };
 		398DB9A62873B47000F921AD /* browser.fml.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 398DB99C287392D700F921AD /* browser.fml.yaml */; };
-		398DB9AA2874591A00F921AD /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398DB9A92874591A00F921AD /* AppConfig.swift */; };
 		398DB9AC2874A4CF00F921AD /* ui.fml.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 398DB9AB2874A4CF00F921AD /* ui.fml.yaml */; };
-		398DB9AE2874A61800F921AD /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398DB9AD2874A61800F921AD /* UIConfig.swift */; };
+		398DB9BA28877E3F00F921AD /* Glean in Frameworks */ = {isa = PBXBuildFile; productRef = 398DB9B928877E3F00F921AD /* Glean */; };
+		398DB9C2288783CC00F921AD /* nimbus-fml-configuration.sh in Resources */ = {isa = PBXBuildFile; fileRef = 398DB9BE288783CC00F921AD /* nimbus-fml-configuration.sh */; };
+		398DB9C3288783CC00F921AD /* nimbus-fml.sh in Resources */ = {isa = PBXBuildFile; fileRef = 398DB9BF288783CC00F921AD /* nimbus-fml.sh */; };
+		398DB9C4288783CC00F921AD /* nimbus-fml-configuration.local.sh in Resources */ = {isa = PBXBuildFile; fileRef = 398DB9C0288783CC00F921AD /* nimbus-fml-configuration.local.sh */; };
+		398DB9C5288783CC00F921AD /* sdk_generator.sh in Resources */ = {isa = PBXBuildFile; fileRef = 398DB9C1288783CC00F921AD /* sdk_generator.sh */; };
+		398DB9D22887976400F921AD /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398DB9CF2887976400F921AD /* AppConfig.swift */; };
+		398DB9D32887976400F921AD /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398DB9D02887976400F921AD /* UIConfig.swift */; };
+		398DB9D42887976400F921AD /* MessagingConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398DB9D12887976400F921AD /* MessagingConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +58,22 @@
 		398DB97B28736BA200F921AD /* BrowserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		398DB98E28736E6B00F921AD /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
 		398DB99C287392D700F921AD /* browser.fml.yaml */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text.yaml; path = browser.fml.yaml; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
-		398DB9A92874591A00F921AD /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		398DB9AB2874A4CF00F921AD /* ui.fml.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = ui.fml.yaml; sourceTree = "<group>"; };
-		398DB9AD2874A61800F921AD /* UIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConfig.swift; sourceTree = "<group>"; };
+		398DB9BB2887800F00F921AD /* app-menu.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "app-menu.yaml"; sourceTree = "<group>"; };
+		398DB9BC2887836700F921AD /* app-structure.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "app-structure.yaml"; sourceTree = "<group>"; };
+		398DB9BE288783CC00F921AD /* nimbus-fml-configuration.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "nimbus-fml-configuration.sh"; sourceTree = "<group>"; };
+		398DB9BF288783CC00F921AD /* nimbus-fml.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "nimbus-fml.sh"; sourceTree = "<group>"; };
+		398DB9C0288783CC00F921AD /* nimbus-fml-configuration.local.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "nimbus-fml-configuration.local.sh"; sourceTree = "<group>"; };
+		398DB9C1288783CC00F921AD /* sdk_generator.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = sdk_generator.sh; sourceTree = "<group>"; };
+		398DB9C62887857200F921AD /* messaging.fml.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = messaging.fml.yaml; sourceTree = "<group>"; };
+		398DB9C72887868200F921AD /* browser-messaging.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "browser-messaging.yaml"; sourceTree = "<group>"; };
+		398DB9CA28878A9400F921AD /* onboarding.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = onboarding.yaml; sourceTree = "<group>"; };
+		398DB9CB2887902900F921AD /* util-triggers.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "util-triggers.yaml"; sourceTree = "<group>"; };
+		398DB9CC2887944100F921AD /* default-browser.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "default-browser.yaml"; sourceTree = "<group>"; };
+		398DB9CF2887976400F921AD /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		398DB9D02887976400F921AD /* UIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConfig.swift; sourceTree = "<group>"; };
+		398DB9D12887976400F921AD /* MessagingConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingConfig.swift; sourceTree = "<group>"; };
+		398DB9D528879D6000F921AD /* pocket.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = pocket.yaml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				398DB99228736F5000F921AD /* Glean in Frameworks */,
+				398DB9BA28877E3F00F921AD /* Glean in Frameworks */,
 				398DB99528736F9C00F921AD /* MozillaAppServices in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +106,7 @@
 		398DB95228736BA000F921AD = {
 			isa = PBXGroup;
 			children = (
+				398DB9BD288783CC00F921AD /* bin */,
 				398DB95D28736BA000F921AD /* Browser */,
 				398DB96E28736BA200F921AD /* UnitTests */,
 				398DB97828736BA200F921AD /* UITests */,
@@ -152,7 +171,6 @@
 			children = (
 				398DB9962873709A00F921AD /* Screens */,
 				398DB997287370A300F921AD /* Components */,
-				398DB9AB2874A4CF00F921AD /* ui.fml.yaml */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -212,7 +230,10 @@
 		398DB99A2873798C00F921AD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				398DB9CE2887967600F921AD /* FeatureConfigs */,
+				398DB9CD288795EC00F921AD /* Plugins */,
 				398DB99C287392D700F921AD /* browser.fml.yaml */,
+				398DB9BC2887836700F921AD /* app-structure.yaml */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -220,10 +241,44 @@
 		398DB99F2873947D00F921AD /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				398DB9A92874591A00F921AD /* AppConfig.swift */,
-				398DB9AD2874A61800F921AD /* UIConfig.swift */,
+				398DB9CF2887976400F921AD /* AppConfig.swift */,
+				398DB9D12887976400F921AD /* MessagingConfig.swift */,
+				398DB9D02887976400F921AD /* UIConfig.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		398DB9BD288783CC00F921AD /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				398DB9BF288783CC00F921AD /* nimbus-fml.sh */,
+				398DB9BE288783CC00F921AD /* nimbus-fml-configuration.sh */,
+				398DB9C0288783CC00F921AD /* nimbus-fml-configuration.local.sh */,
+				398DB9C1288783CC00F921AD /* sdk_generator.sh */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		398DB9CD288795EC00F921AD /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				398DB9C72887868200F921AD /* browser-messaging.yaml */,
+				398DB9CC2887944100F921AD /* default-browser.yaml */,
+				398DB9D528879D6000F921AD /* pocket.yaml */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		398DB9CE2887967600F921AD /* FeatureConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				398DB9AB2874A4CF00F921AD /* ui.fml.yaml */,
+				398DB9C62887857200F921AD /* messaging.fml.yaml */,
+				398DB9CA28878A9400F921AD /* onboarding.yaml */,
+				398DB9BB2887800F00F921AD /* app-menu.yaml */,
+				398DB9CB2887902900F921AD /* util-triggers.yaml */,
+			);
+			path = FeatureConfigs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,8 +300,8 @@
 			);
 			name = Browser;
 			packageProductDependencies = (
-				398DB99128736F5000F921AD /* Glean */,
 				398DB99428736F9C00F921AD /* MozillaAppServices */,
+				398DB9B928877E3F00F921AD /* Glean */,
 			);
 			productName = Browser;
 			productReference = 398DB95B28736BA000F921AD /* Browser.app */;
@@ -321,8 +376,8 @@
 			);
 			mainGroup = 398DB95228736BA000F921AD;
 			packageReferences = (
-				398DB99028736F5000F921AD /* XCRemoteSwiftPackageReference "glean-swift" */,
 				398DB99328736F9C00F921AD /* XCRemoteSwiftPackageReference "rust-components-swift" */,
+				398DB9B828877E3F00F921AD /* XCRemoteSwiftPackageReference "glean-swift" */,
 			);
 			productRefGroup = 398DB95C28736BA000F921AD /* Products */;
 			projectDirPath = "";
@@ -340,9 +395,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398DB9C4288783CC00F921AD /* nimbus-fml-configuration.local.sh in Resources */,
+				398DB9C5288783CC00F921AD /* sdk_generator.sh in Resources */,
 				398DB96628736BA200F921AD /* Preview Assets.xcassets in Resources */,
 				398DB96328736BA200F921AD /* Assets.xcassets in Resources */,
 				398DB9A62873B47000F921AD /* browser.fml.yaml in Resources */,
+				398DB9C2288783CC00F921AD /* nimbus-fml-configuration.sh in Resources */,
+				398DB9C3288783CC00F921AD /* nimbus-fml.sh in Resources */,
 				398DB9AC2874A4CF00F921AD /* ui.fml.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,9 +471,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				398DB96128736BA000F921AD /* ContentView.swift in Sources */,
-				398DB9AE2874A61800F921AD /* UIConfig.swift in Sources */,
-				398DB9AA2874591A00F921AD /* AppConfig.swift in Sources */,
+				398DB9D32887976400F921AD /* UIConfig.swift in Sources */,
+				398DB9D22887976400F921AD /* AppConfig.swift in Sources */,
 				398DB95F28736BA000F921AD /* BrowserApp.swift in Sources */,
+				398DB9D42887976400F921AD /* MessagingConfig.swift in Sources */,
 				398DB98F28736E6B00F921AD /* CancelBag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -746,34 +806,34 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		398DB99028736F5000F921AD /* XCRemoteSwiftPackageReference "glean-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mozilla/glean-swift";
-			requirement = {
-				kind = exactVersion;
-				version = 43.0.2;
-			};
-		};
 		398DB99328736F9C00F921AD /* XCRemoteSwiftPackageReference "rust-components-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mozilla/rust-components-swift";
 			requirement = {
 				kind = exactVersion;
-				version = 93.1.0;
+				version = 93.7.0;
+			};
+		};
+		398DB9B828877E3F00F921AD /* XCRemoteSwiftPackageReference "glean-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mozilla/glean-swift";
+			requirement = {
+				kind = exactVersion;
+				version = 50.1.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		398DB99128736F5000F921AD /* Glean */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 398DB99028736F5000F921AD /* XCRemoteSwiftPackageReference "glean-swift" */;
-			productName = Glean;
-		};
 		398DB99428736F9C00F921AD /* MozillaAppServices */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 398DB99328736F9C00F921AD /* XCRemoteSwiftPackageReference "rust-components-swift" */;
 			productName = MozillaAppServices;
+		};
+		398DB9B928877E3F00F921AD /* Glean */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 398DB9B828877E3F00F921AD /* XCRemoteSwiftPackageReference "glean-swift" */;
+			productName = Glean;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

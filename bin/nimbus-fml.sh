@@ -218,7 +218,7 @@ done
 # Now generate the YAML that the `experimenter` server will use to keep up to date.
 # This file, `.experimenter.yaml` **must** be checked into source control, and kept up-to-date.
 # Experimenter will download it regularly/nightly.
-CMD="$BINARY_PATH generate-experimenter --channel $CHANNEL --cache-dir $CACHE_DIR $APP_FML_FILE $EXPERIMENTER_MANIFEST"
+CMD="$BINARY_PATH generate-experimenter $repo_args --channel $CHANNEL --cache-dir $CACHE_DIR $APP_FML_FILE $EXPERIMENTER_MANIFEST"
 display=${CMD//"$SOURCE_ROOT"/\$SOURCE_ROOT}
 echo "$display"
 $CMD

@@ -1,0 +1,5 @@
+my/manifests: ./FeatureConfigs
+mozilla-mobile/android-components: main
+mozilla-mobile/android-components: releases_102.0
+mozilla-mobile/android-components: aebcdef0123456
+mozilla-mobile/android-components: ../android-components
