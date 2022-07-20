@@ -24,7 +24,7 @@ export CHANNEL
 
 ## Set the name of the Swift module that contains the Nimbus SDK.
 ## Default: MozillaAppServices
-# export MOZ_APPSERVICES_MODULE=
+export MOZ_APPSERVICES_MODULE=MozillaAppServices
 
 ## Set the list of directories to scan for *.fml.yaml files.
 ## Default: $PROJECT
@@ -42,7 +42,7 @@ export APP_FML_FILE=$SOURCE_ROOT/$PROJECT/Resources/browser.fml.yaml
 ## This gives the FML the branches/tags/locations for the dependencies that may have FML files in them.
 ## These can be absolute, relative to SOURCE_ROOT, a URL to a JSON/YAML file, or a URL shortcut.
 ## Default: is empty.
-# export REPO_FILES=dependency-versions.json
+export REPO_FILES=$PROJECT/Resources/app-structure.yaml
 
 ## Set the directory where FMLs from other repos will be downloaded.
 ## Default: $SOURCE_ROOT/build/nimbus/fml-cache
@@ -58,4 +58,4 @@ export APP_FML_FILE=$SOURCE_ROOT/$PROJECT/Resources/browser.fml.yaml
 
 ## Set the directory of the app-services directory. This is useful for local development of `nimbus-fml`.
 ## By default, this is empty, and a pre-built version of `nimbus-fml` will downloaded.
-export MOZ_APPSERVICES_LOCAL=/Users/jhugman/workspaces/mozilla/fenix-android-components/application-services
+# export MOZ_APPSERVICES_LOCAL=

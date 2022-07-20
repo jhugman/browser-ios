@@ -1,0 +1,34 @@
+imports:
+  - path: "@my/manifests/ui.fml.yaml"
+    channel: none
+    features:
+      # Pocket related onboarding pages.
+      onboarding:
+        - value:
+            pages:
+              pocket:
+                text: The innernette is much betterer with Pocket
+                show-after: EXTRAS
+
+      # Add app-menu items to do with Pocket.
+      app-menu:
+        - value:
+            menu-items:
+              # Open My Pocket list
+              open-pocket:
+                label: Open My Pocket List
+                icon: ic_pocket
+                deep-link: OPEN_POCKET_VIEW
+                trigger:
+                  only-if:
+                    - POCKET_SUPPORTED_LOCALE
+              # Save to Pocket.
+              save-pocket:
+                label: Save to Pocket
+                icon: ic_pocket_save
+                deep-link: SAVE_TO_POCKET
+                trigger:
+                  only-if:
+                    - POCKET_SUPPORTED_LOCALE
+                    - WEB_PAGE_IS_LOADED
+

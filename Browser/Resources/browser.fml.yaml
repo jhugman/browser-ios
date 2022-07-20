@@ -7,9 +7,7 @@ about:
 channels:
   - release
   - debug
-imports:
-  - path: ../UI/ui.fml.yaml
-    channel: release
-features: {}
-objects: {}
-enums: {}
+includes:
+  - "./Plugins/browser-messaging.yaml"
+  - "./Plugins/default-browser.yaml"
+  - "./Plugins/pocket.yaml"

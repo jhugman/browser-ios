@@ -1,0 +1,33 @@
+---
+include:
+  - ./util-triggers.yaml
+features:
+  app-menu:
+    description: The hamburger menu
+    variables:
+      menu-items:
+        description: The menu items in an unsorted object
+        type: Map<String, MenuItem>
+        default: {}
+
+objects:
+  MenuItem:
+    description: A menu item to be displayed in the menu
+    fields:
+      label:
+        description: The short label displayed when the user opens the menu
+        type: Text
+        default: ""
+      icon:
+        description: The asset name taken from the bundle
+        type: Option<String>
+        default: null
+      deep-link:
+        description: The deeplink into another part of the app
+        type: String
+        default: about:blank
+      trigger:
+        type: Option<Trigger>
+        default: null
+        description: Only show this item if the following trigger holds
+      

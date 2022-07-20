@@ -1,0 +1,23 @@
+imports:
+  - path: "@my/manifests/ui.fml.yaml"
+    channel: none
+    features:
+      onboarding:
+        - value:
+            pages:
+              default-browser:
+                text: You know, think about setting Firefox as default
+                show-after: WHY_FIREFOX
+
+  - path: "@my/manifests/messaging.fml.yaml"
+    channel: none
+    features:
+      messaging:
+        - value:
+            messages:
+              default-browser:
+                title: "Shameless Marketing message"
+                text: "Eight of ten webpages are opened in the default browser"
+                button-label: "Commit to the mission"
+                action: MAKE_DEFAULT_BROWSER
+                style: FALLBACK

@@ -1,0 +1,57 @@
+---
+include:
+  - ./util-triggers.yaml
+features:
+    onboarding:
+        description: The onboarding experience, split into several pages.
+        variables:
+            pages:
+                description: >
+                    Each screen of the onboarding flow
+                type: Map<String, OnboardingScreenData>
+                default: {}
+            page-order:
+                description: >
+                    A hint of the order that the pages are shown.
+
+                    Each page has a section and show-after which describes
+                    a directed acyclic graph. This list adds to that DAG.
+
+                    A topological sort derives the final ordering.
+                type: List<String>
+                default:
+                  - START
+                  - WELCOME
+                  - WHY_FIREFOX
+                  - EXTRAS
+                  - END
+
+objects:
+  OnboardingScreenData:
+    description: >
+        Enough information to render a screen of the onboarding flow
+    fields:
+        background-color:
+            type: String
+            description: The hex code of the background
+            default: "#ff8040"
+        center-image:
+            type: Option<String>
+            default: null
+            description: The optional image displayed above the text
+        text:
+            type: Text
+            default: ""
+            description: The text in the middle of the screen
+        section:
+            type: String
+            default: "END"
+            description: A hint as to what the order should be.
+        show-after:
+            type: String
+            default: "START"
+            description: A hint as to what the order should be.
+        trigger:
+            type: Option<Trigger>
+            default: null
+            description: Only show this item if the following trigger holds
